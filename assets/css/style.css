@@ -1,0 +1,26 @@
+.product,
+.total {
+    box-shadow: 0 0 50px #ededed;
+}
+
+.product-img {
+    max-width: 120px;
+}
+
+.total p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.total p:last-child {
+    margin: 0;
+}
+
+.product h4,
+.product p {
+    margin: 0;
+}
+
+input {
+    max-width: 70px;
+}

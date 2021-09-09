@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shopping Cart</title>
+
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="container mt-5 text-center">
+                <h1>My Shopping Cart</h1>
+            </div>
+        </header>
+
+        <main class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="products">
+                            <div class="product rounded-3 mb-5 px-3 py-3">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-2">
+                                        <img
+                                            src="assets/img/product-1.png"
+                                            alt="product-1"
+                                            class="img-fluid product-img"
+                                        />
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <h4>iPhone 11 128GB Black</h4>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div
+                                            class="
+                                                form-group
+                                                d-flex
+                                                align-items-center
+                                                justify-content-between
+                                            "
+                                        >
+                                        
+                                            <button
+                                                class="btn btn-warning"
+                                                id="phone-minus"
+                                            >
+                                                <i class="fas fa-minus"></i>
+                                            </button>
+                                            <input
+                                                class="form-control text-center"
+                                                type="number"
+                                                name=""
+                                                id="phone-number"
+                                                min="0"
+                                                value="1"
+                                            />
+                                            <button
+                                                class="btn btn-warning"
+                                                id="phone-plus"
+                                            >
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 text-center">
+                                        <p>
+                                            $<span id="phone-total">1219</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-1">
+                                        <button class="btn btn-danger remove-button">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product rounded-3 mb-5 px-3 py-3">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-2">
+                                        <img
+                                            src="assets/img/product-2.png"
+                                            alt="product-2"
+                                            class="img-fluid product-img"
+                                        />
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <h4>iPhone 11 Silicone Case - Black</h4>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <div
+                                            class="
+                                                form-group
+                                                d-flex
+                                                align-items-center
+                                                justify-content-between
+                                            "
+                                        >
+                                        <button
+                                            id="case-minus"
+                                            class="btn btn-warning"
+                                            >
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <input
+                                            class="form-control text-center"
+                                            type="number"
+                                            name=""
+                                            id="case-number"
+                                            min="0"
+                                            value="1"
+                                        />
+                                        <button
+                                            id="case-plus"
+                                            class="btn btn-warning"
+                                        >
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-2 text-center">
+                                        <p>$<span id="case-total">88</span></p>
+                                    </div>
+                                    <div class="col-lg-1">
+                                        <button  class="btn btn-danger remove-button">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="total p-5 rounded-3">
+                                <div class="row justify-content-between">
+                                    <div class="col-lg-4">
+                                        <p>Subtotal:</p>
+                                        <p>Tax:</p>
+                                        <p>Total:</p>
+                                    </div>
+                                    <div class="col-lg-4 text-end">
+                                        <p>$<span id="sub-total">1307</span></p>
+                                        <p>$<span id="tax-amount">0</span></p>
+                                        <p>$<span id="total-price">0</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script
+            src="https://kit.fontawesome.com/f50fde9993.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>
